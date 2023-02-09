@@ -11,7 +11,7 @@ class App
     @books = []
     @people = []
     @rentals = []
-    @classroom = []
+    @classroom = Classroom.new('Website Development')
   end
 
   def list_all_books
@@ -20,8 +20,8 @@ class App
     else
       @books.each do |book|
         puts Title: #{book.title} Author: #{book.author}"
-      end
     end
+   end
   end
 
   def list_all_people
@@ -126,4 +126,3 @@ class App
   def invalid_input
     puts 'Invalid Input'
   end
-end
