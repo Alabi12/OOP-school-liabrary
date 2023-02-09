@@ -16,17 +16,17 @@ class App
 
   def list_all_books
     if @books.empty?
-      puts "There is no book available, kindly create a book"
+      puts 'There is no book available, kindly create a book'
     else
       @books.each do |book|
-        puts Title: #{book.title} Author: #{book.author}"
+        puts "Title: #{book.title}, Author: #{book.author}"
+      end
     end
-   end
   end
 
   def list_all_people
     if @people.empty?
-      puts "There is none available, kindly add a person."
+      puts 'There is none available, kindly add a person.'
     else
       @people.each do |person|
         puts "[#{person.class.name}] Name: #{person.name} ID: #{person.id} Age: #{person.age}"
@@ -122,7 +122,8 @@ class App
       end
     end
   end
-  
+
   def invalid_input
     puts 'Invalid Input'
   end
+end
